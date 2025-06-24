@@ -44,7 +44,7 @@ const work = [
   {
     role: "MERN Stack Intern",
     company: "Softpro India",
-    duration: "Jul 2023 – Oct 2023",
+    duration: "Aug 2024 – Oct 2024",
     tech: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs"],
     highlights: [
       "Developed APIs and dynamic dashboards for internal tools.",
