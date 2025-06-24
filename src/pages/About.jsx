@@ -45,10 +45,10 @@ function About() {
           className="text-center"
         >
           <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-red-600 mb-4">
-            About Me — Frontend Engineer
+            About Me — Software Engineer
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-lg text-gray-300">
-            Hey! I'm <span className="text-white font-semibold">Yash Veer Jain</span>, a frontend engineer with a passion for building smooth, responsive, and accessible web experiences.
+            Hey! I'm <span className="text-white font-semibold">Yash Veer Jain</span>, a software engineer with a passion for building smooth, responsive, and accessible web experiences.
           </motion.p>
         </motion.div>
 

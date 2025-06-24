@@ -57,7 +57,7 @@ function Navbar() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
             download
             className="text-white bg-red-600 px-4 py-1 rounded hover:bg-red-700 transition"
           >
@@ -106,7 +106,7 @@ function Navbar() {
                 Mail Me
               </a>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
                 download
                 className="text-white bg-red-600 px-4 py-1 rounded hover:bg-red-700 transition"
               >

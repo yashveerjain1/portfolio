@@ -66,7 +66,7 @@ function Home() {
               transition={{ delay: 1 }}
             >
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
                 download
                 className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
               >
