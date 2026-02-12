@@ -108,8 +108,9 @@ function Navbar() {
                 Mail Me
               </a>
               <a
-                href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
+                 href="https://drive.google.com/file/d/1cekeD9zPc0zD4SGF_HDsBrPriLIdygGE/view?usp=drivesdk"
                 download
+                target="_blank"
                 className="text-white bg-[#00BFFF] px-4 py-1 rounded hover:bg-[#00BFFF] transition"
               >
                 Download Resume

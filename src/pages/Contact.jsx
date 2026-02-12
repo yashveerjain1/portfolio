@@ -44,7 +44,7 @@ function Contact() {
 
         <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-gradient-to-r from-purple-500 via-green-400 to-blue-500 opacity-20 rounded-full blur-[120px] animate-pulse" />
 
-        <div className="max-w-7xl gap-8 mx-auto flex flex-col md:flex-row items-center justify-between z-10 relative">
+        <div className="max-w-7xl gap-8 p-4 mx-auto flex flex-col md:flex-row items-center justify-between z-10 relative">
           {/* Left: Contact Form */}
 
           <motion.div
