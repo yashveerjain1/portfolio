@@ -20,11 +20,11 @@ function Navbar() {
   }, [location.pathname]);
 
   return (
-    <div className=" bg-black w-full sticky top-0 z-50 border-b border-red-600">
+    <div className=" bg-black w-full sticky top-0 z-50 border-b border-[#00BFFF]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center flex-wrap md:flex-nowrap">
         {/* Left: Animated Name */}
         <motion.h1
-          className="text-2xl font-bold text-red-600 whitespace-nowrap"
+          className="text-2xl font-bold text-[#00BFFF] whitespace-nowrap"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -38,9 +38,10 @@ function Navbar() {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-white hover:text-red-500 transition font-medium ${
-                location.pathname === link.path ? "text-red-600" : ""
-              }`}
+              className={`text-white hover:text-[#00BFFF] hover:underline hover:decoration-4 hover:decoration-[#00BFFF] hover:underline-offset-20
+ transition font-medium ${
+   location.pathname === link.path ? "text-[#00BFFF]" : ""
+ }`}
             >
               {link.name}
             </Link>
@@ -51,15 +52,16 @@ function Navbar() {
         <div className="hidden md:flex items-center space-x-4">
           <a
             href="mailto:yashjain0112233@gmail.com?subject=Hire%20Me%20via%20Portfolio&body=Hi%20Yash%2C%0A%0AI%20checked%20your%20portfolio%20and%20would%20love%20to%20connect."
-            className="text-white border border-red-500 px-4 py-1 rounded hover:bg-red-600 transition"
+            className="text-[#00BFFF] border border-[#00BFFF] px-4 py-1 rounded hover:bg-[#00BFFF] hover:text-white  transition"
           >
             Mail Me
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1cekeD9zPc0zD4SGF_HDsBrPriLIdygGE/view?usp=drivesdk"
             download
-            className="text-white bg-red-600 px-4 py-1 rounded hover:bg-red-700 transition"
+            target="_blank"
+            className="text-white bg-[#00BFFF] px-4 py-1 rounded hover:bg-sky-300 transition"
           >
             Download Resume
           </a>
@@ -69,9 +71,9 @@ function Navbar() {
         <div className="block md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (
-              <X className="text-white" />
+              <X className="text-[#00BFFF]" />
             ) : (
-              <Menu className="text-white" />
+              <Menu className="text-[#00BFFF]" />
             )}
           </button>
         </div>
@@ -91,8 +93,8 @@ function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block text-white hover:text-red-500 font-medium ${
-                  location.pathname === link.path ? "text-red-600" : ""
+                className={`block text-white hover:text-white font-medium ${
+                  location.pathname === link.path ? "text-[#00BFFF]" : ""
                 }`}
               >
                 {link.name}
@@ -101,14 +103,14 @@ function Navbar() {
             <div className="flex flex-col gap-3 pt-4">
               <a
                 href="mailto:yashjain0112233@gmail.com"
-                className="text-white border border-red-500 px-4 py-1 rounded hover:bg-red-600 transition"
+                className="text-white border border-[#00BFFF] px-4 py-1 rounded hover:bg-[#00BFFF]transition"
               >
                 Mail Me
               </a>
               <a
                 href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
                 download
-                className="text-white bg-red-600 px-4 py-1 rounded hover:bg-red-700 transition"
+                className="text-white bg-[#00BFFF] px-4 py-1 rounded hover:bg-[#00BFFF] transition"
               >
                 Download Resume
               </a>

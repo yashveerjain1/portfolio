@@ -30,7 +30,7 @@ function Home() {
           {/* Left Content */}
           <div className="space-y-6">
             <motion.h1
-              className="text-4xl md:text-6xl font-bold text-red-600"
+              className="sm:text-3xl md:text-5xl text-2xl font-bold text-[#00BFFF]"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -47,8 +47,8 @@ function Home() {
               <Typewriter
                 words={[
                   "React Developer",
-                  "MERN Stack Enthusiast",
                   "Frontend Engineer",
+                  "Working as ASE",
                 ]}
                 loop
                 cursor
@@ -66,15 +66,16 @@ function Home() {
               transition={{ delay: 1 }}
             >
               <a
-                href="https://drive.google.com/file/d/1NKzdaq7ysGCU-6DfopC3YhqWI7GS2kq-/view?usp=sharing"
+                 href="https://drive.google.com/file/d/1cekeD9zPc0zD4SGF_HDsBrPriLIdygGE/view?usp=drivesdk"
                 download
-                className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
+                target="_blank"
+                className="bg-[#00BFFF] text-white px-6 py-2 rounded hover:bg-sky-300 transition"
               >
                 Download Resume
               </a>
               <Link
                 to="/contact"
-                className="border border-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition"
+                className="border border-[#00BFFF] text-white px-6 py-2 rounded hover:bg-[#00BFFF] transition"
               >
                 Hire Me
               </Link>
@@ -120,7 +121,7 @@ function Home() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-lg text-white mb-2">
+          <p className="text-lg text-[#00BFFF] mb-2">
             "Yash Veer Jain is a talented and dependable software developer with
             strong technical skills, a positive attitude, and a collaborative
             spirit—an asset to any team."
@@ -144,20 +145,21 @@ function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0, delay: 0 }}
           viewport={{ once: true }}
           className="flex flex-wrap gap-4 justify-center"
         >
           {[
-            "💼 Open to Work",
-            "🤝 Freelance Available",
-            "🌱 Currently Learning: Data Analytics",
-            "🧑‍🏫 Tech Mentor",
-            "💡 React + MERN Focused",
+            "React Js",
+            "Javascript",
+            "Shadcn ui",
+            "Tailwind css",
+            "Tech Mentor",
+            "React",
           ].map((badge, idx) => (
             <span
               key={idx}
-              className="animate-bounce bg-red-600 text-white px-4 py-2 rounded-full text-sm shadow-md"
+              className=" bg-[#00BFFF] text-white px-4 py-2 rounded-full text-sm shadow-md"
               style={{ animationDelay: `${idx * 0.2}s` }}
             >
               {badge}
@@ -165,59 +167,85 @@ function Home() {
           ))}
         </motion.div>
       </div>
+      <section className="px-6 py-20 bg-zinc-950 text-zinc-200" id="skills">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-14 text-center tracking-wide">
+            Skills
+          </h2>
 
-      <section className="px-6 py-12 bg-zinc-900 text-white" id="skills">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold mb-8 text-center">🧠 Skills</h2>
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 gap-10"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            {/* Technical Skills Card */}
+            <div className="bg-zinc-900/60 backdrop-blur-md border border-zinc-800 rounded-2xl p-8 shadow-lg hover:shadow-blue-500/10 transition duration-300">
+              <h3 className="text-2xl font-semibold text-blue-400 mb-6">
+                Technical Skills
+              </h3>
 
-    <motion.div
-      className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-center text-center"
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-    >
-     {/* Tech Skills */}
-<div className="flex flex-col items-center text-left">
-  <h3 className="text-xl font-semibold text-blue-400 mb-4">🛠️ Tech Skills</h3>
-  <ul className="space-y-2 pl-4 border-l-2 border-blue-500">
-    {[
-      "C", "C++", "HTML", "CSS", "JavaScript", "React",
-      "Node.js", "Express.js", "MongoDB", "Git & GitHub",
-      "VS Code", "MS Word", "PowerPoint", "Canva"
-    ].map((skill) => (
-      <li
-        key={skill}
-        className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:bg-blue-400 before:rounded-full"
-      >
-        {skill}
-      </li>
-    ))}
-  </ul>
-</div>
+              <ul className="space-y-3">
+                {[
+                  "C",
+                  "C++",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "React",
+                  "Git & GitHub",
+                  "VS Code",
+                  "MS Word",
+                  "PowerPoint",
+                  "Canva",
+                  "REST API",
+                  "Fetch & Axios",
+                  "Redux",
+                  "Postman & Swagger",
+                ].map((skill) => (
+                  <li
+                    key={skill}
+                    className="flex items-center gap-3 text-zinc-300 hover:text-white transition duration-200"
+                  >
+                    <span className="h-2 w-2 bg-blue-400 rounded-full"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
+            {/* Soft Skills Card */}
+            <div className="bg-zinc-900/60 backdrop-blur-md border border-zinc-800 rounded-2xl p-8 shadow-lg hover:shadow-emerald-500/10 transition duration-300">
+              <h3 className="text-2xl font-semibold text-emerald-400 mb-6">
+                Soft Skills
+              </h3>
 
-      {/* Soft Skills */}
-      <div className="flex flex-col items-center text-left">
-        <h3 className="text-xl font-semibold text-green-400 mb-4">🤝 Soft Skills</h3>
-        <ul className="space-y-2 pl-4 border-l-2 border-green-500">
-          {[
-            "Problem-Solving", "Leadership", "Team Management",
-            "Teamwork", "Presentation Skills", "Work Ethic"
-          ].map((skill) => (
-            <li
-              key={skill}
-              className="relative pl-4 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:bg-green-400 before:rounded-full"
-            >
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
-  </div>
-</section>
-
+              <ul className="space-y-3">
+                {[
+                  "Time Management",
+                  "Cross-Functional Collaboration",
+                  "Reporting & Documentation",
+                  "Communication & Presentation Skills",
+                  "Leadership",
+                  "Team Management",
+                  "Teamwork",
+                  "Clear Communication",
+                  "Attention to Detail",
+                ].map((skill) => (
+                  <li
+                    key={skill}
+                    className="flex items-center gap-3 text-zinc-300 hover:text-white transition duration-200"
+                  >
+                    <span className="h-2 w-2 bg-emerald-400 rounded-full"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }
